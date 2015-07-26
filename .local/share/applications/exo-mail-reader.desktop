@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Mail Reader
+Comment=Read your email
+Icon=internet-mail
+Exec=exo-open --launch MailReader %u
+NoDisplay=true
+OnlyShowIn=XFCE;
+Categories=Network;X-XFCE;X-Xfce-Toplevel;
+StartupNotify=true
+Terminal=false
