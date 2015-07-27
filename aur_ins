@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo pacman -U *.tar.xz
+sudo pacman -U arch_xfce/aur_files/*.tar.xz
