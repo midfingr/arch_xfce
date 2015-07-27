@@ -12,3 +12,9 @@ sudo updatedb
 sudo systemctl enable lxdm
 sudo systemctl enable ntpd
 sudo systemctl enable NetworkManager
+rm -r ~/.config
+rm -r ~/.local
+cp -r arch_xfce/.config ~/.config
+cp -r arch_xfce/.local ~/.local
+cp arch_xfce/.gtkrc-20 ~/.gtkrc-20
+cp arch_xfce/.bashrc ~/.bashrc
