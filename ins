@@ -11,6 +11,8 @@ sudo mv /etc/lxdm/lxdm.conf /etc/lxdm/lxdm.conf.back
 sudo cp arch_xfce/lxdm.conf /etc/lxdm/lxdm.conf
 chmod +x arch_xfce/aur_ins
 sudo updatedb
+chmod +x arch_xfce/post-clean
+arch_xfce/post-clean
 sudo systemctl enable lxdm
 sudo systemctl enable ntpd
 sudo systemctl enable NetworkManager
