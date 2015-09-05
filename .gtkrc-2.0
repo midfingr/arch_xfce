@@ -5,10 +5,10 @@ style "gtk-theme-config-panel" {
 	bg[PRELIGHT] = shade(1.1,"#000000")
 	bg[ACTIVE] = shade(0.9,"#000000")
 	bg[SELECTED] = shade(0.97,"#000000")
-	fg[NORMAL] = "#ef2929"
-	fg[PRELIGHT] = "#ef2929"
-	fg[SELECTED] = "#ef2929"
-	fg[ACTIVE] = "#ef2929"
+	fg[NORMAL] = "#edd400"
+	fg[PRELIGHT] = "#edd400"
+	fg[SELECTED] = "#edd400"
+	fg[ACTIVE] = "#edd400"
 }
 
 widget "*PanelWidget*" style "gtk-theme-config-panel"
