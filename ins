@@ -5,7 +5,7 @@ sudo systemctl start haveged
 sudo pacman-key --init
 sudo pacman-key --populate archlinux
 sudo pacman -Syy
-sudo pacman -S lxdm faenza-icon-theme xdg-utils gtk-engine-aurora gnome-keyring gnome-disk-utility cantarell-fonts polkit-gnome networkmanager networkmanager-dispatcher-ntpd network-manager-applet ntp numix-themes xfce4 xfce4-screenshooter xfce4-clipman-plugin xfce4-taskmanager dosfstools ntfs-3g ristretto gamin leafpad lynx gvfs gnome-themes-standard thunar-archive-plugin ttf-liberation firefox flashplugin xdg-user-dirs p7zip unzip zip unrar gtk-engine-murrine wget xfce4-whiskermenu-plugin xfce4-notifyd youtube-dl --noconfirm
+sudo pacman -S lxdm xdg-utils gtk-engine-aurora gnome-keyring gnome-disk-utility cantarell-fonts polkit-gnome networkmanager networkmanager-dispatcher-ntpd network-manager-applet ntp numix-themes xfce4 xfce4-screenshooter xfce4-clipman-plugin xfce4-taskmanager dosfstools ntfs-3g ristretto gamin leafpad lynx gvfs gnome-themes-standard thunar-archive-plugin ttf-liberation firefox xdg-user-dirs p7zip unzip zip unrar gtk-engine-murrine wget xfce4-whiskermenu-plugin xfce4-notifyd youtube-dl --noconfirm
 xdg-user-dirs-update
 sudo mv /etc/lxdm/lxdm.conf /etc/lxdm/lxdm.conf.back
 sudo cp arch_xfce/lxdm.conf /etc/lxdm/lxdm.conf
