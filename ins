@@ -12,10 +12,11 @@ sudo cp arch_xfce/lxdm.conf /etc/lxdm/lxdm.conf
 chmod +x arch_xfce/aur_ins
 sudo updatedb
 chmod +x arch_xfce/post-clean
-arch_xfce/post-clean
+sudo cp arch_xfce/post-clean /usr/bin/
 sudo systemctl enable lxdm
 sudo systemctl enable ntpd
 sudo systemctl enable NetworkManager
+sudo mkdir /root/.gpupg
 rm -r ~/.mozilla
 rm -r ~/.config
 rm -r ~/.local
@@ -23,7 +24,7 @@ cp -r arch_xfce/.config ~/.config
 cp -r arch_xfce/.local ~/.local
 cp -r arch_xfce/.mozilla ~/.mozilla
 cp arch_xfce/.gtkrc-2.0 ~/.gtkrc-2.0
-cp arch_xfce/.bashrc ~/.bashrc
+cp arch_xfce/.bashrc ~/.bashrc && source ~/.bashrc
 sudo pacman -Rns xfce4-appfinder --noconfirm
 sudo pacman -Rns xfwm4-themes --noconfirm
 arch_xfce/aur_ins
