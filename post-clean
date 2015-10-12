@@ -1,7 +1,0 @@
-#!/bin/bash
-sudo gtk-update-icon-cache /usr/share/icons/UltraFlatIconsDark/
-sudo gtk-update-icon-cache /usr/share/icons/UltraFlatIconsGreenDark/
-sudo gtk-update-icon-cache /usr/share/icons/UltraFlatIconsOrangeDark/
-sudo gtk-update-icon-cache /usr/share/icons/HighContrast
-sudo gtk-update-icon-cache /usr/share/icons/hicolor
-sudo /usr/bin/pacman -Scc
