@@ -8,11 +8,13 @@ sudo pacman -Syy
 sudo pacman -S lxdm xdg-utils gtk-engine-aurora gnome-keyring gnome-disk-utility cantarell-fonts polkit-gnome ncdu networkmanager networkmanager-dispatcher-ntpd network-manager-applet ntp numix-themes speedtest-cli xfce4 xfce4-screenshooter xfce4-clipman-plugin xfce4-taskmanager dosfstools ntfs-3g ristretto gamin leafpad lynx gvfs gnome-themes-standard thunar-archive-plugin ttf-liberation firefox xdg-user-dirs p7zip unzip zip unrar gtk-engine-murrine wget xfce4-whiskermenu-plugin xfce4-notifyd youtube-dl --noconfirm
 xdg-user-dirs-update
 sudo mv /etc/lxdm/lxdm.conf /etc/lxdm/lxdm.conf.back
-sudo cp arch_xfce/lxdm.conf /etc/lxdm/lxdm.conf
+sudo cp arch_xfce/scripts/lxdm.conf /etc/lxdm/lxdm.conf
 chmod +x arch_xfce/aur_ins
 sudo updatedb
-chmod +x arch_xfce/post-clean
-sudo cp arch_xfce/post-clean /usr/bin/
+chmod +x arch_xfce/scripts/post-clean
+sudo cp arch_xfce/scripts/post-clean /usr/bin/
+sudo cp arch_xfce/scripts/bash_root /root/.bashrc && sudo source /root/.bashrc
+sudo cp arch_xfce/scripts/up-grub /usr/bin/
 sudo systemctl enable lxdm
 sudo systemctl enable ntpd
 sudo systemctl enable NetworkManager
