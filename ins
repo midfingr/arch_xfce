@@ -7,7 +7,7 @@ sudo systemctl start haveged
 sudo pacman-key --init
 sudo pacman-key --populate archlinux
 sudo pacman -Syy
-sudo pacman -S lxdm xdg-utils gtk-engine-aurora bash-completion gnome-keyring gnome-disk-utility mlocate cantarell-fonts polkit-gnome ncdu networkmanager networkmanager-dispatcher-ntpd network-manager-applet ntp numix-themes speedtest-cli xfce4 xfce4-screenshooter xfce4-clipman-plugin xfce4-taskmanager dosfstools ntfs-3g ristretto gamin leafpad lynx gvfs gnome-themes-standard thunar-archive-plugin ttf-liberation firefox xdg-user-dirs p7zip unzip zip unrar gtk-engine-murrine wget xfce4-whiskermenu-plugin xfce4-notifyd youtube-dl yaourt --noconfirm
+sudo pacman -S lxdm xfce4-artwork xdg-utils gtk-engine-aurora bash-completion gnome-keyring gnome-disk-utility mlocate cantarell-fonts polkit-gnome ncdu networkmanager networkmanager-dispatcher-ntpd network-manager-applet ntp numix-themes speedtest-cli xfce4 xfce4-screenshooter xfce4-clipman-plugin xfce4-taskmanager dosfstools ntfs-3g ristretto gamin leafpad lynx gvfs gnome-themes-standard thunar-archive-plugin ttf-liberation xdg-user-dirs p7zip unzip zip unrar gtk-engine-murrine wget xfce4-whiskermenu-plugin xfce4-notifyd youtube-dl yaourt --noconfirm
 xdg-user-dirs-update
 sudo mv /etc/lxdm/lxdm.conf /etc/lxdm/lxdm.conf.back
 sudo cp arch_xfce/scripts/lxdm.conf /etc/lxdm/lxdm.conf
@@ -21,12 +21,10 @@ sudo systemctl enable lxdm
 sudo systemctl enable ntpd
 sudo systemctl enable NetworkManager
 sudo mkdir /root/.gpupg
-rm -r ~/.mozilla
 rm -r ~/.config
 rm -r ~/.local
 cp -r arch_xfce/.config ~/.config
 cp -r arch_xfce/.local ~/.local
-cp -r arch_xfce/.mozilla ~/.mozilla
 cp arch_xfce/.gtkrc-2.0 ~/.gtkrc-2.0
 cp arch_xfce/.bashrc ~/.bashrc && source ~/.bashrc
 sudo pacman -Rns xfce4-appfinder --noconfirm
